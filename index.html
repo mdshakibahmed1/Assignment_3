@@ -1,65 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html data-theme="light">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              'bike-primary': '#FF4240',
-            },
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- DaisyUI CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"rel="stylesheet"type="text/css"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'bike-primary': '#FF4240',
           },
         },
-      }
-    </script>
+      },
+    }
+  </script>
+  <title>Document</title>
 </head>
-  <body>
-    <nav>
-      <div class="navbar bg-base-100">
-        <div class="navbar-start">
-          <div class="dropdown">
-            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor">
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M4 6h16M4 12h8m-8 6h16" />
-              </svg>
-            </div>
-          </div>
-          <a class="btn font-extrabold btn-ghost lg:text-4xl text-2xl font-bold ">Hockey <samp class="text-bike-primary lg:text-4xl">’</samp>s</a>
-        </div>
-        <div class="navbar-center hidden lg:flex">
-          <ul class="menu menu-horizontal px-1">
-            <li>
-              <a><samp class="text-[#FF4240]">Home</samp></a>
-            <li>
-             <a>About</a>
-            </li>
-            <li>
-              <a>Pages</a>
-            </li>
-            <li>
-              <a>Blog</a>
-            </li>
-            <li>
-              <a>Contact</a>
-            </li>
-          </ul>
-        </div>
-        <div class="navbar-end">
-          <div class=" hidden lg:flex">
+<body>
+  <!-- Header Section -->
+  <nav>
+    <div class="navbar bg-base-100">
+      <div class="navbar-start">
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               class="h-5 w-5"
@@ -70,12 +36,93 @@
                 stroke-linecap="round"
                 stroke-linejoin="round"
                 stroke-width="2"
-                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                d="M4 6h16M4 12h8m-8 6h16" />
             </svg>
           </div>
-          <a class="btn btn-error ms-3 max-lg:w-31  text-white">Get Ticket</a>
         </div>
+        <a class="btn font-extrabold btn-ghost lg:text-4xl text-2xl font-bold ">Hockey <samp class="text-bike-primary lg:text-4xl">’</samp>s</a>
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1">
+          <li>
+            <a><samp class="text-[#FF4240]">Home</samp></a>
+          <li>
+           <a>About</a>
+          </li>
+          <li>
+            <a>Pages</a>
+          </li>
+          <li>
+            <a>Blog</a>
+          </li>
+          <li>
+            <a>Contact</a>
+          </li>
+        </ul>
+      </div>
+      <div class="navbar-end">
+        <div class=" hidden lg:flex">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-5 w-5"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+          </svg>
+        </div>
+        <a class="btn btn-error ms-3 max-lg:w-31 mr-5  text-white">Get Ticket</a>
+      </div>
+  </div>
+  </nav>
+  <!--slider-section-->
+  <section class="mx-7 mt-12">
+    <div class="carousel w-full h-50">
+      <div id="slide1" class="carousel-item relative w-full">
+        <img
+          src="Images/1.png"
+          class="w-full" 
+        />
+        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+          <a href="#slide4" class="btn btn-circle bg-black text-white border-black">❮</a>
+          <a href="#slide2" class="btn btn-circle  bg-black text-white border-black">❯</a>
+        </div>
+      </div>
+      <div id="slide2" class="carousel-item relative w-full">
+        <img
+          src="Images/1.png"
+          class="w-full" 
+        />
+        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+          <a href="#slide1" class="btn btn-circle  bg-black text-white border-black">❮</a>
+          <a href="#slide3" class="btn btn-circle  bg-black text-white border-black">❯</a>
+        </div>
+      </div>
+      <div id="slide3" class="carousel-item relative w-full">
+        <img
+          src="Images/1.png"
+          class="w-full"
+        />
+        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+          <a href="#slide2" class="btn btn-circle  bg-black text-white border-black">❮</a>
+          <a href="#slide4" class="btn btn-circle  bg-black text-white border-black">❯</a>
+        </div>
+      </div>
+      <div id="slide4" class="carousel-item relative w-full">
+        <img
+          src="Images/1.png"
+          class="w-full" 
+        />
+        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+          <a href="#slide3" class="btn btn-circle  bg-black text-white border-black">❮</a>
+          <a href="#slide1" class="btn btn-circle  bg-black text-white border-black">❯</a>
+        </div>
+      </div>
     </div>
-    </nav>
-  </body>
+  </section>
+</body>
 </html>
